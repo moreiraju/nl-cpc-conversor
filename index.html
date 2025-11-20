@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Agente de IA - NL ↔ CPC</title>
+    <!-- Biblioteca para renderizar símbolos lógicos -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🧠 Tradutor NL ↔ CPC</h1>
+
+        <div class="input-area">
+            <textarea id="entrada" placeholder="Digite uma frase em português ou uma fórmula lógica..."></textarea>
+
+            <!-- Botões para inserir símbolos -->
+            <div class="simbolos-input">
+                <button onclick="inserirSimbolo('¬')">¬</button>
+                <button onclick="inserirSimbolo('∧')">∧</button>
+                <button onclick="inserirSimbolo('∨')">∨</button>
+                <button onclick="inserirSimbolo('→')">→</button>
+                <button onclick="inserirSimbolo('↔')">↔</button>
+            </div>
+        </div>
+
+        <div class="botoes">
+            <h3 id="posicaoF">Selecione qual a conversão desejada:</h3>
+            <button onclick="converterParaCPC()">NL → CPC</button>
+            <button onclick="converterParaNL()">CPC → NL</button>
+            <button class="apagar" onclick="limparTudo()">🗑️ Apagar</button>
+        </div>
+
+        <div id="saida"></div>
+
+        <div class="simbolos">
+            <h3>Símbolos lógicos suportados:</h3>
+            <p>∧ (e) &nbsp;&nbsp; ∨ (ou) &nbsp;&nbsp; ¬ (não) &nbsp;&nbsp; → (se ..., então...) &nbsp;&nbsp; ↔ (se e somente se)
+            </p>
+            <h3>Apenas frases simples ou compostas com até dois conectivos são suportadas.</h3>
+            <p>Exemplo: "Se chover, então a grama ficará molhada."</p>
+            <h4>Conversão esperada: P → Q</h4>
+        </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
