@@ -1,6 +1,6 @@
 # Conversor NL → CPC  
 Conversor de frases em **Linguagem Natural (NL)** para **Cálculo Proposicional (CPC)** usando JavaScript.  
-Projeto desenvolvido para a disciplina de Lógica Aplicada, seguindo os requisitos solicitados pelo professor.
+Projeto desenvolvido para a disciplina de Lógica Para Computação, seguindo os requisitos solicitados pelo professor.
 
 ---
 
